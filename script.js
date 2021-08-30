@@ -8,7 +8,7 @@ var notes = [2000,500,100,50,20,10,5,1];
 function clickHandler() {
   hideMessage();
   if(billAmt.value > 0){
-    if(cashAmt.value >= billAmt.value) {
+    if(Number(cashAmt.value) >= Number(billAmt.value)) {
       var remainingAmt = cashAmt.value - billAmt.value;
       amountToReturn(remainingAmt);
     } else {
