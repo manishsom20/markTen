@@ -25,6 +25,7 @@ function hideMessage () {
 
 function errorMessage (msg) {
   errorMsg.style.display = "block";
+  errorMsg.style.color = "red";
   errorMsg.innerText = msg;
 }
 
